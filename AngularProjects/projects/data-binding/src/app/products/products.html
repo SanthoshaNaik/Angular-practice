@@ -1,0 +1,21 @@
+
+
+<h1>Product Info</h1>
+<hr>
+<div class="pro">
+    
+    <dl>
+        <dt>Product Id: </dt>
+        <dd>{{proId}}</dd>
+        <dt>Product Name:</dt>
+        <dd>{{proName}}</dd>
+        <dt>Product Color:</dt>
+        <dd>{{ProColor}}</dd>
+        <dt>Product Price:</dt>
+        <dd>{{proPrice}}</dd>
+        <dd>
+        <input type="checkbox" [checked]="inStock">
+        </dd>
+        <span>{{inStock ? "Available" :"Out of Stock"}}</span>
+    </dl>
+</div>

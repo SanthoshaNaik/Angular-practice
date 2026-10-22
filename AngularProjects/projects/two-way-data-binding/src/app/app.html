@@ -1,0 +1,15 @@
+<h2>Two-Way Data Binding</h2>
+
+<input type="text" [(ngModel)]="username">
+
+<h3>Username: {{ username }}</h3>
+
+<hr>
+                            <h2>Using signals</h2>
+
+<input
+  [value]="uname()"
+  (input)="uname.set($any($event.target).value)"
+>
+
+<h3>{{ uname() }}</h3>

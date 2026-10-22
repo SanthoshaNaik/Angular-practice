@@ -1,0 +1,9 @@
+<h1>Services</h1>
+<button (click)="getDetails()">getDetails</button>
+
+<ul>
+  @for(product of productDetails(); track product.id)
+  {
+    <li>{{product.id}} {{product.name}} {{product.price}}</li>
+  }
+</ul>

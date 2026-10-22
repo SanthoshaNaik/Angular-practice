@@ -1,0 +1,10 @@
+<h1>Products Details</h1>
+
+<ul class="pro-ul">
+  @for(product of productData(); track product.id)
+  {
+    <li>title: {{product.title}}</li>
+    <li>Proice: {{product.price}}</li>
+    <li>Description: {{product.description}}</li>
+  }
+</ul>

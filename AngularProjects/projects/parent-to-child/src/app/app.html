@@ -1,0 +1,10 @@
+
+<input type="text" [value]="newUser()" (input)="newUser.set($event.target.value)">
+<button (click)="addUser()">AddUser</button>
+
+
+@for(user of users();track user)
+{
+  <app-child [UserName]="user"></app-child>
+  <button (click)="removeUser($index)">Delete</button>
+}

@@ -1,0 +1,7 @@
+<h1>Products Details</h1>
+<ul class="pro-ul">
+  @for(product of productData(); track product.id)
+  {
+    <li><a [routerLink]="['Details/',product.id]">{{product.title}}</a></li>
+  }
+</ul>

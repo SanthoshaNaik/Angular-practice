@@ -1,0 +1,32 @@
+<p>control-statements works!</p>
+<!-- @if -->
+@if (isLoggedIn()) {
+  <h2>Welcome, {{ username() }}</h2>
+} @else {
+  <h2>Please log in</h2>
+}
+<hr>
+<h1>for loop</h1>
+
+<!-- @for -->
+@for (student of students(); track student) {
+  <p>{{ student }}</p>
+}
+
+<hr>
+<h1>switch case</h1>
+
+@switch (role) {
+  @case ('Doctor') {
+    <h2>Doctor Dashboard</h2>
+  }
+  @case ('Patient') {
+    <h2>Patient Dashboard</h2>
+  }
+  @case ('Admin') {
+    <h2>Admin Dashboard</h2>
+  }
+  @default {
+    <h2>Unknown Role</h2>
+  }
+}

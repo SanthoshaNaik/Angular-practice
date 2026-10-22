@@ -1,0 +1,45 @@
+<form [formGroup]="LoginForm" (ngSubmit)="handleProfile()" method="post">
+
+  <input type="text" formControlName="name" placeholder="Enter name" required>
+  @if(name?.hasError('required') && name?.touched)
+  {
+    <span class="error">This name Field is Required</span>
+  }
+
+  @if(name?.errors?.['maxLength'] && name?.touched)
+  {
+    <span class="error">name is Not Valid</span>
+  }
+  <br><br>
+  
+
+  <input type="text" formControlName="email" placeholder="Enter Email">
+  @if(email?.hasError('required') && email?.touched)
+  {
+    <span class="error">This Email Field is Required</span>
+  }
+
+  @if(email?.errors?.['email'] && email?.touched)
+  {
+    <span class="error">This Email is Not Valid</span>
+  }
+  <br><br>
+
+  <input type="password" formControlName="password" placeholder="Enter password">
+  @if(password?.hasError('required') && password?.touched)
+  {
+    <span class="error">This Password Field is Required</span>
+  }
+  
+  @if(password?.errors?.['minLength'] && password?.touched)
+  {
+    <span class="error">Password is Not Valid</span>
+  }
+  <br><br>
+  <button [disabled]="LoginForm.invalid">Submit</button>
+
+  <button (click)="Reset()">Reset</button>
+
+ 
+
+</form>

@@ -1,0 +1,151 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/component-demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/component-demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/data-binding/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/data-binding/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/get-and-set/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/get-and-set/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/two-way-data-binding/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/two-way-data-binding/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/to-do-list/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/to-do-list/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/data-passing/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/data-passing/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/global-state-signal/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/global-state-signal/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/pipe/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/pipe/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/routing/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/routing/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/forms/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/forms/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/reactive-forms/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/reactive-forms/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/reactive-form-validation/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/reactive-form-validation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/parent-to-child/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/parent-to-child/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/to-do-list/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/to-do-list/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/signal-forms/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/signal-forms/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/signal-form-validation/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/signal-form-validation/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/services-demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/services-demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/api/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/api/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dynamic-routing-with-api/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/dynamic-routing-with-api/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/jsonserver-integrate/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/jsonserver-integrate/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/post-api-inteegrate/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/post-api-inteegrate/tsconfig.spec.json"
+    }
+  ]
+}

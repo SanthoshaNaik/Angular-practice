@@ -1,0 +1,10 @@
+<h1>Signal form</h1>
+
+<input type="email" [formField]="loginForm.email" placeholder="Enter email">
+<br><br>
+
+<input type="password" [formField]="loginForm.password" placeholder="enter Password">
+<br><br>
+
+<button (click)="submitForm()">Submit</button>
+<button (click)="Reset()">Reset</button>

@@ -1,0 +1,8 @@
+<input type="text" (input)="newUser.set($event.target.value)" placeholder='Enter New User'>
+<button (click)="addUser()">Add User</button>
+
+
+@for(user of users();track user)
+{  
+  <app-parent-to-child [username]="user"></app-parent-to-child>
+}

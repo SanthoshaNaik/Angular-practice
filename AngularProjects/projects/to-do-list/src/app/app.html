@@ -1,0 +1,22 @@
+<h1>To-List</h1>
+
+<input type="text" [value]="title()" (input)="title.set($event.target.value)" placeholder="Enter List">
+
+<button (click)="AddTask()">Add Task</button>
+
+<ul>
+  @for(task of tasks();track task.id)
+  {
+  <li class="taks-list">
+    <span>{{$index+1}}</span>
+    <span>{{task.title}}</span>
+    <span>
+      <button (click)="Delete(task.id)">Delete</button>
+    </span>
+  </li>
+  }
+  @empty
+  {
+    <span>No Task Found</span>
+  }
+</ul>
